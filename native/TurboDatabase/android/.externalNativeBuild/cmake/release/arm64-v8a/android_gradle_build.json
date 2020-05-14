@@ -1,0 +1,51 @@
+{
+  "stringTable": {
+    "0": "/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android23 --gcc-toolchain=/data/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/data/Android/Sdk/ndk-bundle/sysroot -DTurboDatabase_EXPORTS -I/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/../../../../../../node_modules/react-native/React -I/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/../../../../../../node_modules/react-native/React/Base -I/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/../../../../../../node_modules/react-native/ReactCommon/jsi -I/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/../../../../../../node_modules/react-native/ReactAndroid/src/main/jni/first-party/fb/include -isystem /data/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /data/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include -isystem /data/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/data/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/CMakeLists.txt",
+    "/data/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/data/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build \"/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/arm64-v8a\" --target clean"
+  ],
+  "libraries": {
+    "TurboDatabase-Release-arm64-v8a": {
+      "buildCommand": "/data/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build \"/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/arm64-v8a\" --target TurboDatabase",
+      "buildType": "release",
+      "toolchain": "706695663",
+      "abi": "arm64-v8a",
+      "artifactName": "TurboDatabase",
+      "files": [
+        {
+          "src": "/data/Git/examples/testDB/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/TurboDatabase.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/TurboDatabase.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/arm64-v8a/libTurboDatabase.so"
+    }
+  },
+  "toolchains": {
+    "706695663": {
+      "cppCompilerExecutable": "/data/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

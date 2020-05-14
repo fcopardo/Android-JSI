@@ -1,0 +1,3 @@
+/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/x86/CMakeFiles/TurboDatabase.dir

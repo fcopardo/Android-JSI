@@ -1,0 +1,2 @@
+/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp
+Configuring done

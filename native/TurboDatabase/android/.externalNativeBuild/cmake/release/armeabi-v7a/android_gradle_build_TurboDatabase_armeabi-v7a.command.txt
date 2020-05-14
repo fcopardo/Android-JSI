@@ -1,0 +1,8 @@
+Executable : /data/Android/Sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+--build
+/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/armeabi-v7a
+--target
+TurboDatabase
+jvmArgs : 
+

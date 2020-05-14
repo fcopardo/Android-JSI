@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "/data/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/data/Git/examples/testDB/native/TurboDatabase/android/src/main/cpp/CMakeLists.txt",
+    "/data/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/data/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build \"/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/x86\" --target clean"
+  ],
+  "libraries": {
+    "TurboDatabase-Release-x86": {
+      "artifactName": "TurboDatabase",
+      "buildCommand": "/data/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build \"/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/x86\" --target TurboDatabase",
+      "abi": "x86",
+      "output": "/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/x86/libTurboDatabase.so"
+    }
+  }
+}
