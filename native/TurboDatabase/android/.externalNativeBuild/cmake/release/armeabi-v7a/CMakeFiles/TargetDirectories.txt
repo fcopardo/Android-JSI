@@ -1,3 +1,0 @@
-/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-/data/Git/examples/testDB/native/TurboDatabase/android/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TurboDatabase.dir

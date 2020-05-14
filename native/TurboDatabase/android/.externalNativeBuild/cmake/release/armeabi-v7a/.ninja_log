@@ -1,9 +1,0 @@
-# ninja log v5
-2	1182	1589311528	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	f7b95ae0f2c7f70d
-2	1347	1589311528	CMakeFiles/TurboDatabase.dir/data/Git/examples/testDB/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp.o	2d4e573d4743feb9
-1347	1504	1589311528	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/armeabi-v7a/libTurboDatabase.so	1f8206fd965d5c46
-3	494	1589352553	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	f7b95ae0f2c7f70d
-494	607	1589352553	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/armeabi-v7a/libTurboDatabase.so	1f8206fd965d5c46
-5	528	1589362905	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	f7b95ae0f2c7f70d
-6	786	1589362905	CMakeFiles/TurboDatabase.dir/data/Git/examples/testDB/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp.o	2d4e573d4743feb9
-786	974	1589362905	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/armeabi-v7a/libTurboDatabase.so	1f8206fd965d5c46

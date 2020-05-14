@@ -1,9 +1,0 @@
-# ninja log v5
-0	1132	1589311410	CMakeFiles/TurboDatabase.dir/data/Git/examples/testDB/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp.o	6daa16d378e08f60
-20	1212	1589311522	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	22a536e7fe660ccf
-1212	1367	1589311522	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/x86_64/libTurboDatabase.so	d3a00d0f60ede7e3
-5	502	1589352551	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	22a536e7fe660ccf
-503	670	1589352551	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/x86_64/libTurboDatabase.so	d3a00d0f60ede7e3
-6	672	1589362902	CMakeFiles/TurboDatabase.dir/TurboDatabase.cpp.o	22a536e7fe660ccf
-6	1015	1589362902	CMakeFiles/TurboDatabase.dir/data/Git/examples/testDB/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp.o	6daa16d378e08f60
-1015	1205	1589362902	/data/Git/examples/testDB/native/TurboDatabase/android/build/intermediates/cmake/release/obj/x86_64/libTurboDatabase.so	d3a00d0f60ede7e3
