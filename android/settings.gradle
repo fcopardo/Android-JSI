@@ -3,4 +3,7 @@ apply from: file("../node_modules/@react-native-community/cli-platform-android/n
 include ':app'
 include ':TurboDatabase'
 project(':TurboDatabase').projectDir = new File(rootProject.projectDir, '../native/TurboDatabase/android')
+include ':ReactAndroid'
+project(':ReactAndroid').projectDir = new File(
+        rootProject.projectDir, '../node_modules/react-native/ReactAndroid')
 
