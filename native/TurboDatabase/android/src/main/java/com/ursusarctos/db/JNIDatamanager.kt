@@ -1,9 +1,12 @@
 package com.ursusarctos.db
 
+import android.content.Context
+
 class JNIDatamanager {
 
     companion object {
         private var instance : JNIDatamanager? = null
+        var context = Context? = null
 
         init {
             System.loadLibrary("TurboDatabase")
@@ -12,6 +15,9 @@ class JNIDatamanager {
 
         @JvmStatic
         fun getData() : String {
+            context?.let{
+                instance?.data = assets.open("HP6.txt").bufferedReader().use(BufferedReader::readText)
+            }
             return if(instance != null && instance?.data!=null){
                 instance!!.data
             }else{
