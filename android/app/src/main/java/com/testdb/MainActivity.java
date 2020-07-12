@@ -4,9 +4,16 @@ import com.ursusarctos.db.JNIDatamanager;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.ReactInstanceManager;
+import android.os.Bundle;
 
 
 public class MainActivity extends ReactActivity implements ReactInstanceManager.ReactInstanceEventListener {
+
+  @Override
+  public void onCreate(Bundle bundle) {
+    super.onCreate(bundle);
+    com.ursusarctos.db.JNIDatamanager.setContext(this);
+  }
 
   @Override
   public void onResume() {
