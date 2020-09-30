@@ -44,7 +44,7 @@ const App: () => React$Node = () => {
               <Text style={styles.sectionTitle}>Step One</Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>{global.TurboDatabase.getData()}</Text>
+              <Text style={styles.sectionTitle}>{global.TurboDatabase.getData("some file")}</Text>
             </View>
           </View>
         </ScrollView>

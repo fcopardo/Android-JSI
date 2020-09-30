@@ -2,6 +2,7 @@ package com.ursusarctos.db
 
 import android.content.Context
 import java.io.BufferedReader
+import java.io.File
 import java.text.DateFormat
 import java.util.Date
 
@@ -17,7 +18,8 @@ class JNIDatamanager {
         }
 
         @JvmStatic
-        fun getData() : String {
+        fun getData(fileName : String) : String {
+            android.util.Log.e("com.testdb", "fileName is "+fileName)
             android.util.Log.e("com.testdb", "reading starts "+DateFormat.getDateTimeInstance().format(Date()))
             context?.let {
                 //val reader = context?.assets?.open("HP6.txt")?.bufferedReader()
@@ -51,6 +53,55 @@ class JNIDatamanager {
                         android.util.Log.e("com.testdb", "result is empty ")
                     }
        
+                //instance?.data = context?.assets?.open("HP6.txt")?.bufferedReader().use(BufferedReader::readText)
+            }
+            android.util.Log.e("com.testdb", "reading finished "+DateFormat.getDateTimeInstance().format(Date()))
+            return if(instance != null && instance?.data!=null){
+                instance!!.data
+            }else{
+                "there is no data"
+            }
+        }
+
+        @JvmStatic
+        fun readFileAsString(filepath : String) : String {
+            android.util.Log.e("com.testdb", "reading starts "+DateFormat.getDateTimeInstance().format(Date()))
+            context?.let {
+                if(filepath.contains(java.io.File.pathSeparator)){
+
+                }
+                var file = File(filepath)
+                //val reader = context?.assets?.open("HP6.txt")?.bufferedReader()
+                var contextNull : Boolean = context!=null
+                android.util.Log.e("com.testdb", "context is "+contextNull)
+                val reader = context?.assets?.open("HP6.txt")?.bufferedReader()
+
+                var assetsNull : Boolean = context?.assets!=null
+                android.util.Log.e("com.testdb", "assets is "+assetsNull)
+
+                var readerNull : Boolean = context?.assets?.open("HP6.txt")!=null
+                android.util.Log.e("com.testdb", "reader is "+readerNull)
+
+                var result = ""
+                val content = StringBuilder()
+                try {
+                    var line = reader?.readLine()
+                    while (line != null) {
+                        content.append(line)
+                        line = reader?.readLine()
+                    }
+                } finally {
+                    reader?.close()
+                }
+                result = content.toString()
+
+                if(!result.isNullOrBlank()){
+                    android.util.Log.e("com.testdb", "result is "+result)
+                    instance?.data = result
+                }else{
+                    android.util.Log.e("com.testdb", "result is empty ")
+                }
+
                 //instance?.data = context?.assets?.open("HP6.txt")?.bufferedReader().use(BufferedReader::readText)
             }
             android.util.Log.e("com.testdb", "reading finished "+DateFormat.getDateTimeInstance().format(Date()))

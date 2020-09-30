@@ -65,8 +65,10 @@ jsi::Value SampleModule::get(
             size_t count) -> jsi::Value {
           auto env = attachCurrentThread();
 
-          auto runTest = env->GetStaticMethodID(globalClassRef, "getData", "()Ljava/lang/String;");
-          auto str = (jstring)env->CallStaticObjectMethod(globalClassRef, runTest);
+          auto filename = (jstring)env->NewStringUTF(arguments[0].asString(runtime).utf8(runtime).c_str());
+
+          auto runTest = env->GetStaticMethodID(globalClassRef, "getData", "(Ljava/lang/String;)Ljava/lang/String;");
+          auto str = (jstring)env->CallStaticObjectMethod(globalClassRef, runTest, filename);
 
           const char *cStr = env->GetStringUTFChars(str, nullptr);
 
