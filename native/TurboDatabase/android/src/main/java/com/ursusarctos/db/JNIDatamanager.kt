@@ -2,6 +2,7 @@ package com.ursusarctos.db
 
 import android.content.Context
 import java.io.BufferedReader
+import java.io.File
 import java.text.DateFormat
 import java.util.Date
 
@@ -23,14 +24,16 @@ class JNIDatamanager {
                 //val reader = context?.assets?.open("HP6.txt")?.bufferedReader()
                 var contextNull : Boolean = context!=null
                 android.util.Log.e("com.testdb", "context is "+contextNull)
+                //var file = File(context?.filesDir, "HP6.txt")
                 val reader = context?.assets?.open("HP6.txt")?.bufferedReader()
+                //val reader = file.bufferedReader()
 
-                var assetsNull : Boolean = context?.assets!=null
-                android.util.Log.e("com.testdb", "assets is "+assetsNull)
+                //var assetsNull : Boolean = context?.assets!=null
+                //android.util.Log.e("com.testdb", "assets is "+assetsNull)
 
-                var readerNull : Boolean = context?.assets?.open("HP6.txt")!=null
-                android.util.Log.e("com.testdb", "reader is "+readerNull)
-            
+                //var readerNull : Boolean = context?.assets?.open("HP6.txt")!=null
+                //android.util.Log.e("com.testdb", "reader is "+readerNull)
+
                     var result = ""
                     val content = StringBuilder()
                     try {
@@ -50,7 +53,7 @@ class JNIDatamanager {
                     }else{
                         android.util.Log.e("com.testdb", "result is empty ")
                     }
-       
+
                 //instance?.data = context?.assets?.open("HP6.txt")?.bufferedReader().use(BufferedReader::readText)
             }
             android.util.Log.e("com.testdb", "reading finished "+DateFormat.getDateTimeInstance().format(Date()))
